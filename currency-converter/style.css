@@ -1,0 +1,284 @@
+:root {
+    --first: #FEFEFE;
+    --bg: #282A3A;
+    --second: #C69749;
+    --third: #000000;
+    --fourth: #735F32;
+    --last: #735F32;
+}
+html {
+    scroll-behavior: smooth;
+    font-size: 10px;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    font-size: 1.6rem;
+    background-color: var(--bg);
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+*:not(i) {
+    font-family: Arial, Helvetica, sans-serif !important;
+}
+.alignment {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.column {
+    flex-direction: column;
+}
+.top {
+    align-items: flex-start !important;
+}
+h1 {
+    font-size: 4rem;
+    font-style: oblique;
+    color: var(--second);
+}
+p {
+    color: var(--second);
+    font-style: oblique;
+}
+.container {
+    width: 40vw;
+    height: 100vh;
+    border: none;
+    border-radius: 10px;
+    justify-content: flex-start !important;
+    background-color: var(--bg);
+}
+.header {
+    width: 100%;
+    height: 15%;
+}
+.amount {
+    width: 100%;
+    height: 15%;
+}
+.amount p {
+    width: 100%;
+    height: 40%;
+    font-size: 2rem;
+    font-weight: bold;
+    justify-content: flex-start !important;
+}
+.form {
+    width: 100%;
+    height: 60%;
+}
+.form input {
+    width: 100%;
+    border: 1px solid var(--second);
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    caret-color: var(--second);
+    color: var(--bg);
+}
+.exchange {
+    width: 100%;
+    height: 40%;
+    gap: 1rem;
+}
+.from,
+.to {
+    width: 45%;
+    height: 100%;
+}
+.from p,
+.to p {
+    width: 100%;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1rem;
+}
+.to p {
+    margin-left: 8.2rem !important;
+}
+.toLabel {
+    width: 100%;
+    height: 36%;
+    font-size: 2rem;
+    color: var(--second);
+    border: none;
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+.icon {
+    width: 10%;
+    height: 100%;
+}
+.icon .btn {
+    padding: 0.6rem 1.4rem;
+    font-size: 2rem;
+    margin-top: 5.5rem;
+}
+.convertedAmount {
+    width: 100%;
+    height: 10%;
+    margin-top: 3rem;
+}
+.converted {
+    width: 100%;
+    height: 10%;
+}
+.btn {
+    display: inline-block;
+    padding: 1.2rem 2rem;
+    background-color: var(--second);
+    color: var(--bg);
+    font-size: 2rem;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: grab;
+}
+.btn:hover {
+    background-color: var(--bg);
+    color: var(--second);
+}
+.dropbtn {
+    color: var(--second);
+    padding: 12px 16px;
+    font-size: 1.6rem;
+    border: none;
+    border-radius: 10px;
+    cursor: grab;
+    width: 80%;
+    height: 58px;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--bg);
+}
+.dropbtn span:first-child {
+    height: 38px;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+.dropdown-content {
+    border-radius: 10px;
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    z-index: 1;
+    border-radius: 10px;
+    width: 80%;
+}
+.dropdown-content span {
+    border-radius: 10px;
+    padding: 10px 16px;
+    display: flex;
+    color: var(--second);
+    justify-content: space-between;
+}
+.dropbtn span {
+    border-radius: 10px;
+    padding: 10px 16px;
+    display: flex;
+    justify-content: space-between;
+}
+.dropdown-content span:hover {
+    cursor: grab;
+}
+.show {
+    display: block;
+}
+.dropbtn2 {
+    color: var(--second);
+    padding: 12px 16px;
+    font-size: 1.6rem;
+    border: none;
+    margin-left: 40px;
+    border-radius: 10px;
+    cursor: grab;
+    width: 80%;
+    height: 58px;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--bg);
+}
+.dropbtn2 span:first-child {
+    height: 38px;
+}
+.dropdown2 {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+.dropdown-content2 {
+    border-radius: 10px;
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    z-index: 1;
+    border-radius: 10px;
+    width: 80%;
+    margin-left: 40px;
+}
+.dropdown-content2 span {
+    border-radius: 10px;
+    padding: 10px 16px;
+    display: flex;
+    justify-content: space-between;
+    color: var(--second);
+}
+.dropbtn2 span {
+    border-radius: 10px;
+    padding: 10px 16px;
+    display: flex;
+    justify-content: space-between;
+}
+.dropdown-content2 span:hover {
+    cursor: grab;
+}
+.show2 {
+    display: block;
+}
+.flag {
+    background-position: center;
+    background-size: cover;
+    width: 50px !important;
+}
+.usa {
+    background-image: url(/currency-converter/img/1200px-Flag_of_the_United_States.svg.png);
+
+}
+.europa {
+    background-image: url(/currency-converter/img/euablem.gif);
+}
+.turkey {
+    background-image: url(/currency-converter/img/Flag_of_Turkey.svg.png);
+}
+.norway {
+    background-image: url(/currency-converter/img/Flag-Norway.png);
+}
+.china {
+    background-image: url(/currency-converter/img/Flag-China.png);
+}
+button.dropbtn:hover,
+button.dropbtn2:hover,
+.dropdown-content span:hover,
+.dropdown-content2 span:hover {
+    opacity: 0.5;
+}
+.eventsNone {
+    pointer-events: none;
+    opacity: 0;
+}
+.deleteTag {
+    padding-top: 275px;
+    color: var(--second);
+    position: absolute;
+    z-index: 2;
+}
+.convertedAmountP {
+    font-size: 3rem;
+}

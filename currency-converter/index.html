@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="alignment">
+    <div class="container alignment column">
+        <div class="header alignment">
+            <h1>Currency Converter</h1>
+        </div>
+        <div class="amount alignment column ">
+            <p class="alignment">ENTER AMOUNT :</p>
+            <form class="form alignment">
+                <input type="text" class="enterAmount" placeholder="Enter Your Amount">
+            </form>
+        </div>
+        <div class="exchange alignment">
+            <div class="from alignment column">
+                <p>FROM</p>
+                <form class="form alignment top">
+                    <div class="dropdown">
+                        <button onclick="myFunction()" class="dropbtn">
+                            <span class="flag turkey"></span>
+                            <span>TRY</span>
+                        </button>
+                        <div id="myDropdown" class="dropdown-content">
+                            <span onclick="gelenID(this.id)" id="0">
+                                <span class="flag usa"></span>
+                                <span>USD </span>
+                            </span>
+                            <span onclick="gelenID(this.id)" id="1">
+                                <span class="flag europa"></span>
+                                <span>EUR</span>
+                            </span>
+                            <span onclick="gelenID(this.id)" id="2">
+                                <span class="flag norway"></span>
+                                <span>NOK</span>
+                            </span>
+                            <span onclick="gelenID(this.id)" id="3">
+                                <span class="flag china"></span>
+                                <span>CNY</span>
+                            </span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="icon alignment">
+                <button class="btn" onclick="changeCurrency()">
+                    <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                </button>
+            </div>
+            <div class="to alignment column">
+                <p>TO</p>
+                <form class="form alignment top">
+                    <div class="dropdown2">
+                        <button onclick="myFunction2()" class="dropbtn2">
+                            <span class="flag usa"></span>
+                            <span>USD</span>
+                        </button>
+                        <div id="myDropdown2" class="dropdown-content2">
+                            <span onclick="gelenID2(this.id)" id="0">
+                                <span class="flag turkey"></span>
+                                <span>TRY </span>
+                            </span>
+                            <span onclick="gelenID2(this.id)" id="1">
+                                <span class="flag europa"></span>
+                                <span>EUR</span>
+                            </span>
+                            <span onclick="gelenID2(this.id)" id="2">
+                                <span class="flag norway"></span>
+                                <span>NOK</span>
+                            </span>
+                            <span onclick="gelenID2(this.id)" id="3">
+                                <span class="flag china"></span>
+                                <span>CNY</span>
+                            </span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="convertedAmount alignment">
+           <p class="convertedAmountP"></p>
+        </div>
+        <div class="converted alignment">
+            <button class="btn" onclick="control()">Get Exchange Rate</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
